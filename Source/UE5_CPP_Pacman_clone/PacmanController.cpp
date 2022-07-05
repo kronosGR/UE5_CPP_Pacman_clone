@@ -7,10 +7,10 @@ void APacmanController::SetupInputComponent()
 {
 	Super::SetupInputComponent();
 
-	InputComponent->BindAction("MoveUp", IE_Pressed, this, &APacmanController::MoveUp);
-	InputComponent->BindAction("MoveDown", IE_Pressed, this, &APacmanController::MoveDown );
-	InputComponent->BindAction("MoveLeft", IE_Pressed, this, &APacmanController::MoveLeft);
-	InputComponent->BindAction("MoveRight", IE_Pressed, this, &APacmanController::MoveRight);
+	InputComponent->BindAction(TEXT("MoveUp"), IE_Pressed, this, &APacmanController::MoveUp);
+	InputComponent->BindAction(TEXT("MoveDown"), IE_Pressed, this, &APacmanController::MoveDown );
+	InputComponent->BindAction(TEXT("MoveLeft"), IE_Pressed, this, &APacmanController::MoveLeft);
+	InputComponent->BindAction(TEXT("MoveRight"), IE_Pressed, this, &APacmanController::MoveRight);
 }
 
 APacmanPawn* APacmanController::GetPacmanPawn() const
